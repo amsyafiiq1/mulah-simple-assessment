@@ -23,5 +23,5 @@ export class AppComponent {
 
 export interface TableData {
   'Index #': string;
-  Value: number;
+  Value: string;
 }

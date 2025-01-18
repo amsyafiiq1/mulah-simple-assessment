@@ -16,26 +16,32 @@ export class AppService {
       {
         category: 'Alpha',
         value:
-          (this.table1Data().find((data) => data['Index #'] === 'A5')?.Value ||
-            0) +
-          (this.table1Data().find((data) => data['Index #'] === 'A20')?.Value ||
-            0),
+          (Number(
+            this.table1Data().find((data) => data['Index #'] === 'A5')?.Value
+          ) || 0) +
+          (Number(
+            this.table1Data().find((data) => data['Index #'] === 'A20')?.Value
+          ) || 0),
       },
       {
         category: 'Beta',
         value:
-          (this.table1Data().find((data) => data['Index #'] === 'A15')?.Value ||
-            0) /
-          (this.table1Data().find((data) => data['Index #'] === 'A7')?.Value ||
-            0),
+          (Number(
+            this.table1Data().find((data) => data['Index #'] === 'A15')?.Value
+          ) || 0) /
+          (Number(
+            this.table1Data().find((data) => data['Index #'] === 'A7')?.Value
+          ) || 0),
       },
       {
         category: 'Charlie',
         value:
-          (this.table1Data().find((data) => data['Index #'] === 'A13')?.Value ||
-            0) *
-          (this.table1Data().find((data) => data['Index #'] === 'A12')?.Value ||
-            0),
+          (Number(
+            this.table1Data().find((data) => data['Index #'] === 'A13')?.Value
+          ) || 0) *
+          (Number(
+            this.table1Data().find((data) => data['Index #'] === 'A12')?.Value
+          ) || 0),
       },
     ];
   });
