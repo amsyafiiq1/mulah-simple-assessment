@@ -26,8 +26,10 @@
     <tbody style="border: 1px solid black">
       @for (item of table1Data(); track $index) {
       <tr style="border: 1px solid black">
-        <td style="border: 1px solid black; padding: 5px">{{ item.index }}</td>
-        <td style="border: 1px solid black; padding: 5px">{{ item.value }}</td>
+        <td style="border: 1px solid black; padding: 5px">
+          {{ item["Index #"] }}
+        </td>
+        <td style="border: 1px solid black; padding: 5px">{{ item.Value }}</td>
       </tr>
       }
     </tbody>
